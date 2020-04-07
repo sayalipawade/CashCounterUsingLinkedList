@@ -39,7 +39,7 @@ public class Bank
                     else
                     {
                         totalBalance = transaction.withdrawAmount(amount, totalBalance);
-                        linkedlist.addAtLast(count);
+                        linkedlist.addAtLast(totalBalance);
                         System.out.println("Total Balance:" + totalBalance);
                         linkedlist.deleteAtStart();
                         amount = 0;
