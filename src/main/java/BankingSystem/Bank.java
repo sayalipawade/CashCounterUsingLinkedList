@@ -4,18 +4,20 @@ public class Bank
 {
     public static void main(String[] args)
     {
+        //variables
         int choice,noOfPeople=0;
+        int count=0;
+        int amount=0;
+        int totalBalance=2000;
         Scanner sc = new Scanner(System.in);
         LinkedList linkedlist=new LinkedList();
         Transaction transaction=new Transaction();
         System.out.println("Welcome to banking application");
         System.out.println("Enter no of people in queue:");
         noOfPeople=sc.nextInt();
-        int count=0;
-        int totalBalance=2000;
         do
         {
-            int amount = 0;
+            amount = 0;
             System.out.println("Enter amount");
             amount = sc.nextInt();
             System.out.println("Enter 1 for deposite amount\nEnter 2 for withdraw amount");
